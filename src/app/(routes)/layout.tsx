@@ -2,8 +2,8 @@
 
 import React, { FC, ReactNode } from 'react'
 
-import Footer from '@/components/footer'
-import Header from '@/components/header'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
 
 type Props = { children: ReactNode }
 const PageLayout: FC<Props> = ({ children }) => {

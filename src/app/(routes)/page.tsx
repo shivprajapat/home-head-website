@@ -1,12 +1,15 @@
 import React, { FC, Fragment } from 'react'
-import Banner from './components/banner'
-import Features from './components/Features'
+import { Banner, Features, Product, Instant, MoreFeatures, Frequently } from './components'
 
 const HomePage: FC = () => {
   return (
     <Fragment>
       <Banner />
       <Features />
+      <Product />
+      <Instant />
+      <MoreFeatures />
+      <Frequently />
     </Fragment>
   )
 }

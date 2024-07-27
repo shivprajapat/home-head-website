@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Poppins, Urbanist } from 'next/font/google'
 import './globals.css'
+import 'swiper/css';
 
 const poppins = Poppins({
   weight: ['300', '400', '500', '600', '700'],

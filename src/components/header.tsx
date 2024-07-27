@@ -1,41 +1,74 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import { useState } from 'react'
 
-const Header = () => {
+import Image from 'next/image'
+import { navLinks } from '@/constants'
+
+const Navbar = () => {
+  const [active, setActive] = useState('Home')
+  const [toggle, setToggle] = useState(false)
+
   return (
-    <div className="py-4 md:py-7 lg:py-9">
+    <header>
       <div className="container">
-        <nav className=" flex flex-wrap items-center justify-between mx-auto">
-          <Link href="/">
-            <Image src="./logo.svg" alt="log" width={234} height={71} />
-          </Link>
-          <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            {/* <button
-              type="button"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        <nav className="w-full flex py-4 md:py-6 justify-between items-center">
+          <Image src="./logo.svg" alt="log" width={234} height={71} className="w-36 md:w-52 lg:w-60" />
+
+          <ul className="list-none sm:flex hidden justify-end items-center bg-white py-5 px-12 rounded-full">
+            {navLinks.map((nav, index) => (
+              <li
+                key={nav.id}
+                className={`font-medium cursor-pointer text-[16px] ${active === nav.title ? 'text-red-500' : 'text-black'} ${
+                  index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
+                }`}
+                onClick={() => setActive(nav.title)}
+              >
+                <a href={`#${nav.id}`}>{nav.title}</a>
+              </li>
+            ))}
+          </ul>
+
+          <div className="sm:hidden flex flex-1 justify-end items-center">
+            <Image
+              src={toggle ? './images/icons/close.svg' : './images/icons/menu.svg'}
+              alt="menu"
+              className=" object-contain"
+              width={28}
+              height={28}
+              onClick={() => setToggle(!toggle)}
+            />
+            <div
+              className={`${
+                !toggle ? 'hidden' : 'flex'
+              } p-6 bg-gradient-header absolute top-[70px] right-0 mx-4 min-w-[140px] rounded-xl animation-slide-top`}
             >
-              Get started
-            </button> */}
-            Hello Phone
+              <ul className="list-none flex justify-end items-start flex-1 flex-col">
+                {navLinks.map((nav, index) => (
+                  <li
+                    key={nav.id}
+                    className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                      active === nav.title ? 'text-white' : 'text-dimWhite'
+                    } ${index === navLinks.length - 1 ? 'mb-0' : 'mb-4'}`}
+                    onClick={() => setActive(nav.title)}
+                  >
+                    <a href={`#${nav.id}`}>{nav.title}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
-            <ul className="flex flex-col items-center px-14 font-medium md:space-x-24 h-14 rounded-full md:flex-row bg-white text-black text-base">
-              <li>
-                <Link href="#">CRM</Link>
-              </li>
-              <li>
-                <Link href="#">Overview </Link>
-              </li>
-              <li>
-                <Link href="#">Features</Link>
-              </li>
-            </ul>
+          <div className="sm:flex hidden gap-3.5 items-center">
+            <button className="bg-gradient-green rounded-lg size-10 flex-center">
+              <Image src="./images/icons/phone.svg" alt="log" width={14} height={14} />
+            </button>
+            <div>
+              <span className="text-[#A4A4A4] block font-medium">Toll Free No.</span>
+              <span className="text-white block font-semibold">+91 2093765495</span>
+            </div>
           </div>
         </nav>
       </div>
-    </div>
+    </header>
   )
 }
 
-export default Header
+export default Navbar

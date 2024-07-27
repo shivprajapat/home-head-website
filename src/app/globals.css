@@ -2,11 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   body {
-    @apply bg-black text-white
+    @apply bg-black text-white;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  p {
+    @apply text-[#929292] text-base;
   }
 }
 
-/* https://swiperjs.com/demos */
+.swiper .swiper-slide {
+  @apply !h-auto;
+}
+
+.box-shadow {
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@layer components {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .heading {
+    @apply text-4xl lg:text-[40px] text-white font-semibold mb-2 md:mb-4 lg:mb-5;
+  }
+  .heading .highlight {
+    @apply text-[#A4A4A4];
+  }
+  .animation-slide-top {
+    animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+}

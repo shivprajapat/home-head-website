@@ -1,20 +1,41 @@
 'use client'
 import React, { FC } from 'react'
-import Image from 'next/image'
-
 import { cn } from '@/utils/tailwind.merge'
 
-const Button: FC<ButtonType> = ({ children, type, icon, fullWidth, className, onClick }) => {
-  const defaultStyle =
-    'relative rounded px-5 py-2.5 overflow-hidden group bg-primary text-white transition-all ease-out duration-300 flex justify-between items-center'
+// Define the ButtonType interface with an optional variant prop
+interface ButtonType {
+  children: React.ReactNode
+  type?: 'button' | 'submit' | 'reset'
+  icon?: React.ReactNode
+  className?: string
+  onClick?: () => void
+  variant?: 'primary' | 'outline' // New variant prop
+}
+
+// Define the Button component
+const Button: FC<ButtonType> = ({
+  children,
+  type = 'button',
+  icon,
+  className,
+  onClick,
+  variant = 'primary' // Default to 'primary' variant
+}) => {
+  // Define base styles for the button
+  const baseStyle =
+    'relative rounded px-5 py-2.5 overflow-hidden group transition-all ease-out duration-300 flex justify-between items-center gap-2 font-medium border'
+
+  // Define variant-specific styles
+  const variantStyles =
+    variant === 'primary'
+      ? 'bg-white text-black hover:bg-transparent hover:border-white hover:text-white' // white button styles
+      : 'bg-transparent border-white text-white hover:bg-white hover:text-black' // Outline button styles
+
   return (
-    <>
-      <button className={`${cn(`${fullWidth && 'w-full'} ${defaultStyle} ${className}`)}`} type={type} onClick={onClick}>
-        <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-50 rotate-12 group-hover:-translate-x-64 ease" />
-        <span className="relative">{children}</span>
-        {icon && <Image src={icon} alt="icon" />}
-      </button>
-    </>
+    <button className={`${cn(`${baseStyle} ${variantStyles} ${className}`)}`} type={type} onClick={onClick}>
+      <span>{children}</span>
+      {icon && icon}
+    </button>
   )
 }
 
