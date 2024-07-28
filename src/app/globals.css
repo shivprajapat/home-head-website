@@ -36,6 +36,8 @@
 @layer components {
   .flex-center {
     @apply flex items-center justify-center;
+  }.flex-between {
+    @apply flex items-center justify-between;
   }
   .heading {
     @apply text-4xl lg:text-[40px] text-white font-semibold mb-2 md:mb-4 lg:mb-5;
@@ -47,3 +49,8 @@
     animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 }
+
+/* 
+https://codesandbox.io/s/custom-accordion-in-reactjs-0h4jc
+https://codesandbox.io/s/react-accordion-hbuc2?file=/src/components/Accordion.js
+ */

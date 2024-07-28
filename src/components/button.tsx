@@ -9,7 +9,7 @@ interface ButtonType {
   icon?: React.ReactNode
   className?: string
   onClick?: () => void
-  variant?: 'primary' | 'outline' // New variant prop
+  variant?: 'primary' | 'black' | 'outline' // New variant prop
 }
 
 // Define the Button component
@@ -27,10 +27,13 @@ const Button: FC<ButtonType> = ({
 
   // Define variant-specific styles
   const variantStyles =
-    variant === 'primary'
-      ? 'bg-white text-black hover:bg-transparent hover:border-white hover:text-white' // white button styles
-      : 'bg-transparent border-white text-white hover:bg-white hover:text-black' // Outline button styles
-
+  variant === 'primary'
+  ? 'bg-white text-black hover:bg-transparent hover:border-white hover:text-white' // white button styles
+  : variant === 'outline'
+  ? 'bg-transparent border-white text-white hover:bg-white hover:text-black' // Outline button styles
+  : variant === 'black'
+  ? 'bg-black text-white hover:bg-white hover:text-black border-none' // Black button styles
+  : 'bg-gray-300 text-black'; // Default fallback style
   return (
     <button className={`${cn(`${baseStyle} ${variantStyles} ${className}`)}`} type={type} onClick={onClick}>
       <span>{children}</span>

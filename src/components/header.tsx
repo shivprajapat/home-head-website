@@ -57,7 +57,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className="sm:flex hidden gap-3.5 items-center">
-            <button className="bg-gradient-green rounded-lg size-10 flex-center">
+            <button className="bg-gradient-btn-green rounded-lg size-10 flex-center">
               <Image src="./images/icons/phone.svg" alt="log" width={14} height={14} />
             </button>
             <div>

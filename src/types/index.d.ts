@@ -17,3 +17,10 @@ type HeadingType = {
   title: string
   className?: string
 }
+interface TiltProps {
+  options: {
+    speed: number
+    max: number
+  }
+  [x: string]: any
+}

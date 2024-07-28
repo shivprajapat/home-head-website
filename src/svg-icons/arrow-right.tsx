@@ -1,8 +1,8 @@
 import React from 'react'
 
-const IconArrowRight = () => {
+const IconArrowRight = ({ className }: any) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="8.086" height="7.147" viewBox="0 0 8.086 7.147">
+    <svg xmlns="http://www.w3.org/2000/svg" width="8.086" height="7.147" viewBox="0 0 8.086 7.147" className={className}>
       <path
         id="arrow-sm-right-svgrepo-com_4_"
         data-name="arrow-sm-right-svgrepo-com (4)"
