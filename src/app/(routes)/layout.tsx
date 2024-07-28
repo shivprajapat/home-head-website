@@ -2,9 +2,10 @@
 
 import React, { FC, ReactNode } from 'react'
 
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
+
 import WhatsappButton from '@/components/WhatsappButton'
+import Footer from '@/components/footer'
+import Header from '@/components/header'
 
 type Props = { children: ReactNode }
 const PageLayout: FC<Props> = ({ children }) => {
