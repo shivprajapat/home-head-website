@@ -40,7 +40,7 @@
     @apply flex items-center justify-between;
   }
   .heading {
-    @apply text-4xl lg:text-[40px] text-white font-semibold mb-2 md:mb-4 lg:mb-5;
+    @apply text-3xl lg:text-[40px] text-white font-semibold mb-5;
   }
   .heading .highlight {
     @apply text-[#A4A4A4];

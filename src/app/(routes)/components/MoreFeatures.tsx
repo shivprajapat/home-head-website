@@ -46,12 +46,12 @@ const MoreFeatures = () => {
           </div>
         </div>
         <div className="max-w-screen-md mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-10">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-10">
             {feedbacksData.map((item, index) => {
               const { icon, title, number } = item
               return (
                 <div key={index} className="mb:5 last:mb-0 text-center">
-                  <div className="relative size-10 md:size-16 mx-auto mb-2">
+                  <div className="relative size-10 md:size-16 mx-auto mb-3 sm:mb-2">
                     <Image src={icon} alt="icon" fill />
                   </div>
                   <div>
