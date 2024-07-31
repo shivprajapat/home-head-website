@@ -1,0 +1,37 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="238.622" height="330.766" viewBox="0 0 238.622 330.766">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#dfdfdf"/>
+      <stop offset="1" stop-color="#9b9b9b"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_7646" data-name="Group 7646" transform="translate(-141.9 -463.427)">
+    <g id="Group_7645" data-name="Group 7645" transform="translate(142 463.527)">
+      <path id="Path_40557" data-name="Path 40557" d="M5.086-30H233.336a5.1,5.1,0,0,1,5.086,5.107V295.459a5.1,5.1,0,0,1-5.086,5.107H5.086A5.1,5.1,0,0,1,0,295.459V-24.893A5.1,5.1,0,0,1,5.086-30Z" transform="translate(0 30)" fill="#fff" stroke="#7b7b7b" stroke-width="0.2"/>
+      <text id="Sales_Analytics" data-name="Sales &amp; Analytics" transform="translate(9.671 22.854)" fill="#fff" font-size="14" font-family="Rubik-Medium, Rubik" font-weight="500"><tspan x="0" y="0">Sales &amp; Analytics</tspan></text>
+      <ellipse id="Ellipse_72" data-name="Ellipse 72" cx="4.13" cy="3.614" rx="4.13" ry="3.614" transform="translate(9.671 300.957)" fill="#16b98d"/>
+      <text id="Residential" transform="translate(24.126 306.488)" font-size="8" font-family="Rubik-Regular, Rubik" letter-spacing="-0.02em"><tspan x="0" y="0">Residential</tspan></text>
+      <circle id="Ellipse_73" data-name="Ellipse 73" cx="3.614" cy="3.614" r="3.614" transform="translate(77.819 300.957)" fill="#ff8b00"/>
+      <text id="Commercial" transform="translate(92.274 306.488)" font-size="8" font-family="Rubik-Regular, Rubik" letter-spacing="-0.02em"><tspan x="0" y="0">Commercial</tspan></text>
+      <circle id="Ellipse_74" data-name="Ellipse 74" cx="4.13" cy="4.13" r="4.13" transform="translate(146.999 300.957)" fill="#9747ff"/>
+      <text id="Shopping_Complex" data-name="Shopping Complex" transform="translate(161.455 306.488)" font-size="8" font-family="Rubik-Regular, Rubik" letter-spacing="-0.02em"><tspan x="0" y="0">Shopping Complex</tspan></text>
+      <g id="Group_7644" data-name="Group 7644" transform="translate(21.029 48.579)">
+        <path id="Path_40548" data-name="Path 40548" d="M152.967,70.858a94.1,94.1,0,0,0-50.348,41.1l32.506,19.2a56.342,56.342,0,0,1,30.147-24.61Z" transform="translate(-86.726 -38.239)" fill="#9747ff"/>
+        <path id="Path_40549" data-name="Path 40549" d="M101.5,115.762a94.1,94.1,0,0,0-9.8,73.752l36.343-10.23a56.34,56.34,0,0,1,5.866-44.16Z" transform="translate(-85.376 -42.441)" fill="#9747ff"/>
+        <path id="Path_40550" data-name="Path 40550" d="M91.977,195.743a94.1,94.1,0,0,0,70.662,66.76l8.025-36.892a56.345,56.345,0,0,1-42.31-39.975Z" transform="translate(-85.731 -48.979)" fill="#16b98d"/>
+        <path id="Path_40551" data-name="Path 40551" d="M168.333,264.828A94.1,94.1,0,0,0,254.726,241.3L228.67,213.982a56.343,56.343,0,0,1-51.729,14.086Z" transform="translate(-92.875 -51.631)" fill="#16b98d"/>
+        <path id="Union_16" data-name="Union 16" d="M69.565,134.51a56.342,56.342,0,0,0,15.46-55.656l-.094.026A56.342,56.342,0,0,0,30.769,37.755h0A56.331,56.331,0,0,0,12.31,40.834L0,5.143A94.1,94.1,0,0,1,30.826,0h0a94.1,94.1,0,0,1,90.238,67.915l.1-.028a94.1,94.1,0,0,1-25.54,93.946Z" transform="translate(66.227 27.843)" fill="#ff8b00"/>
+        <text id="_32.1_" data-name="32.1%" transform="translate(164.174 31.572)" fill="#fff" font-size="11" font-family="Rubik-Medium, Rubik" font-weight="500"><tspan x="0" y="0">32.1%</tspan></text>
+        <text id="_17.7_" data-name="17.7%" transform="translate(0 10)" fill="#fff" font-size="11" font-family="Rubik-Medium, Rubik" font-weight="500"><tspan x="0" y="0">17.7%</tspan></text>
+        <text id="_58.2_" data-name="58.2%" transform="translate(0 228.67)" fill="#fff" font-size="11" font-family="Rubik-Medium, Rubik" font-weight="500"><tspan x="0" y="0">58.2%</tspan></text>
+        <circle id="Ellipse_89" data-name="Ellipse 89" cx="58.78" cy="58.78" r="58.78" transform="translate(38.279 62.77)" opacity="0.39" fill="url(#radial-gradient)"/>
+        <circle id="Ellipse_90" data-name="Ellipse 90" cx="17.996" cy="17.996" r="17.996" transform="translate(78.546 104.071)" fill="#fff"/>
+        <path id="Path_41124" data-name="Path 41124" d="M219.1,242.341l-16.168,21.4" transform="translate(-182.014 -51.076)" fill="none" stroke="#fff" stroke-width="0.2"/>
+      </g>
+    </g>
+    <path id="Path_41127" data-name="Path 41127" d="M0,0H236.568" transform="translate(142.36 499.775)" fill="none" stroke="#707070" stroke-width="0.5" opacity="0.49"/>
+    <path id="Path_41122" data-name="Path 41122" d="M911.837,1227.541h35.1v-36.757" transform="translate(-593.067 -634.314)" fill="none" stroke="#fff" stroke-width="0.2"/>
+    <path id="Path_41123" data-name="Path 41123" d="M946.933,1227.541h-35.1v-36.757" transform="translate(-743.349 -650.853)" fill="none" stroke="#fff" stroke-width="0.2"/>
+  </g>
+</svg>

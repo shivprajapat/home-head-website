@@ -12,10 +12,7 @@ const config: Config = {
         }
       },
       colors: {
-        primary: '#00040f',
-        secondary: '#00f6ff',
-        dimWhite: 'rgba(255, 255, 255, 0.7)',
-        dimBlue: 'rgba(9, 151, 124, 0.1)'
+        primary: '#00040f'
       },
       backgroundImage: {
         'gradient-btn-green': 'linear-gradient(180deg, #16B98D 0%, #0B5D47 100%)',

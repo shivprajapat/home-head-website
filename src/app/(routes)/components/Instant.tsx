@@ -22,8 +22,23 @@ const Instant = () => {
               </Button>
             </div>
           </div>
-          <div>
-            <Image src="/images/3rd-party-Integration.png" alt="" width={490} height={297} className="object-contain" />
+          <div className="instant-logos relative">
+            <div className="flex-between">
+              <Image src="/images/instant-logo/99.png" alt="" width={50} height={50} className="object-contain" />
+              <Image src="/images/instant-logo/99.png" alt="" width={50} height={50} className="object-contain" />
+              <Image src="/images/instant-logo/99.png" alt="" width={50} height={50} className="object-contain" />
+              <Image src="/images/instant-logo/99.png" alt="" width={50} height={50} className="object-contain" />
+            </div>
+            <div>
+              <Image src="/images/3rd-party-Integration.png" alt="" width={490} height={297} className="object-contain" />
+            </div>
+            <div className="flex-between">
+              <Image src="/images/instant-logo/99.png" alt="" width={50} height={50} className="object-contain" />
+              <Image src="/images/instant-logo/99.png" alt="" width={50} height={50} className="object-contain" />
+              <Image src="/images/instant-logo/99.png" alt="" width={50} height={50} className="object-contain" />
+              <Image src="/images/instant-logo/99.png" alt="" width={50} height={50} className="object-contain" />
+            </div>
+            {/* <Image src="/images/3rd-party-Integration.png" alt="" width={490} height={297} className="object-contain" /> */}
           </div>
         </div>
       </div>

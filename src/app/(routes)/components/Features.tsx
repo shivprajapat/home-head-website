@@ -3,30 +3,38 @@
 import FeatureCard from '@/components/FeatureCard'
 import React, { useRef } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-
-// Import Swiper styles
 import 'swiper/css/navigation'
 import Image from 'next/image'
 import { featuresData } from '@/constants'
+import {  SwiperRef } from 'swiper/types'
 
-const Features = () => {
+interface Feature {
+  title: string
+  description: string
+  imageUrl: string
+}
+
+
+const Features: React.FC = () => {
   
-  const swiperRef = useRef(null)
+  const swiperRef = useRef<SwiperRef>(null)
+
   const handlePrevClick = () => {
-    swiperRef.current.swiper.slidePrev()
+    swiperRef.current?.swiper.slidePrev()
   }
 
   const handleNextClick = () => {
-    swiperRef.current.swiper.slideNext()
+    swiperRef.current?.swiper.slideNext()
   }
+
   return (
     <section>
       <div className="container">
         <div className="pb-12 md:pb-20">
-          <h2 className="heading">
+          <h2 className="heading" data-aos="fade-up" data-aos-duration={1000}>
             All the <span className="highlight">features</span> done right.
           </h2>
-          <p className="max-w-md text-[#929292] text-base md:text-lg">
+          <p className="max-w-md text-[#929292] text-base md:text-lg" data-aos="fade-up" data-aos-duration={1000}>
             Shape and Scale your business, with our unique and high-powered Real Estate CRM.
           </p>
         </div>
@@ -44,7 +52,7 @@ const Features = () => {
              1280: { slidesPerView: 5 }
            }}
         >
-          {featuresData.map((item, index) => {
+          {featuresData.map((item: Feature, index: number) => {
             return (
               <SwiperSlide key={index}>
                 <FeatureCard {...item} />

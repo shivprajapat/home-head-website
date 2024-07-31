@@ -11,9 +11,8 @@ const Navbar = () => {
     <header>
       <div className="container">
         <nav className="w-full flex py-4 md:py-6 justify-between items-center">
-          <Image src="./logo.svg" alt="log" width={234} height={71} className="w-36 md:w-52 lg:w-60" />
-
-          <ul className="list-none sm:flex hidden justify-end items-center bg-white py-5 px-12 rounded-full">
+          <Image src="./logo.svg" alt="log" width={234} height={71} className="w-36 md:w-52 lg:w-60" data-aos="fade-down" data-aos-duration={500}/>
+          <ul className="list-none sm:flex hidden justify-end items-center bg-white py-5 px-12 rounded-full"  data-aos="fade-down" data-aos-duration={1000}>
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
@@ -46,7 +45,7 @@ const Navbar = () => {
                   <li
                     key={nav.id}
                     className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                      active === nav.title ? 'text-white' : 'text-dimWhite'
+                      active === nav.title ? 'text-white' : 'text-slate-300'
                     } ${index === navLinks.length - 1 ? 'mb-0' : 'mb-4'}`}
                     onClick={() => setActive(nav.title)}
                   >
@@ -56,7 +55,7 @@ const Navbar = () => {
               </ul>
             </div>
           </div>
-          <div className="sm:flex hidden gap-3.5 items-center">
+          <div className="sm:flex hidden gap-3.5 items-center" data-aos="fade-down" data-aos-duration={1000}>
             <button className="bg-gradient-btn-green rounded-lg size-10 flex-center">
               <Image src="./images/icons/phone.svg" alt="log" width={14} height={14} />
             </button>

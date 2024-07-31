@@ -24,3 +24,10 @@ interface TiltProps {
   }
   [x: string]: any
 }
+interface FeatureData {
+  id?: string; // Adjust these based on the actual data structure
+  title: string;
+  description: string;
+  imageUrl: string;
+  // Add other properties as needed
+}
