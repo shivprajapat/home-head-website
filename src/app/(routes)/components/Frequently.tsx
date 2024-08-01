@@ -6,18 +6,18 @@ import { accordionData } from '@/constants'
 import React, { useState } from 'react'
 
 const Frequently = () => {
-  const tabs = ['General', 'CRM Related', 'Evaluation', 'More Security Resources']
-  const [tab, setTab] = useState('General')
+  const tabs = ['General', 'CRM Related', 'Evaluation', 'More Security Resources'];
+  const [tab, setTab] = useState('General');
 
   function selectedTab(tab: React.SetStateAction<string>) {
-    setTab(tab)
+    setTab(tab);
   }
 
-  const [activeIndex, setActiveIndex] = useState<number | null>(null)
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const handleToggle = (index: number) => {
-    setActiveIndex((prevIndex) => (prevIndex === index ? null : index))
-  }
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
   return (
     <section className="pt-0 py-6 lg:py-14">
       <div className="container">

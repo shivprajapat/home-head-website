@@ -1,9 +1,12 @@
-function Tabs(props:any) {
-    if (props.isSelected) {
-      return <div {...props}>{props.children}</div>;
-    }
-    return null;
+interface TabsProps extends React.HTMLProps<HTMLDivElement> {
+  isSelected?: boolean;
+}
+
+function Tabs({ isSelected, ...rest }: TabsProps) {
+  if (isSelected) {
+    return <div {...rest} />;
   }
-  
-  export default Tabs;
-  
+  return null;
+}
+
+export default Tabs;

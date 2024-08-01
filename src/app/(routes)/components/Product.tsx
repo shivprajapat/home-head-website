@@ -12,9 +12,9 @@ const Product = () => {
   return (
     <section id="crm" className="py-10">
       <div className="container">
-        <div className="text-center mb-5 md:mb-16">
-          <h2 className="heading" data-aos="fade-up" data-aos-duration={1000}>A Quick Tour about Our Product </h2>
-          <p className="max-w-[416px] mx-auto text-[#929292] text-base md:text-lg" data-aos="fade-up" data-aos-duration={1100}>
+        <div className="text-center mb-5 md:mb-16" data-aos="fade-up" data-aos-duration={1000}>
+          <h2 className="heading">A Quick Tour about Our Product </h2>
+          <p className="max-w-[416px] mx-auto text-[#929292] text-base md:text-lg">
             Shape and Scale your business, with our unique and high-powered Real Estate CRM.
           </p>
         </div>
