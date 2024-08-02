@@ -12,6 +12,9 @@
   p {
     @apply text-[#929292] text-base;
   }
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @keyframes slide-top {

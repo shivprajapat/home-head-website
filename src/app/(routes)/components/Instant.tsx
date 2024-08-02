@@ -5,7 +5,7 @@ import React from 'react'
 
 const Instant = () => {
   return (
-    <section className='py-10 lg:py-12'>
+    <section className="py-10 lg:py-12">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-48 xl:gap-80">
           <div>

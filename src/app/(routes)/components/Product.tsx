@@ -49,10 +49,9 @@ const Product = () => {
                 The app is great for <br /> <span className="highlight">Basic setup</span> and adjusts.
               </h2>
             </div>
-          {selectedTab === 'Admin' && <ProductAdmin />}
-          {selectedTab === 'Mobile App' && <ProductAdmin />}
+            {selectedTab === 'Admin' && <ProductAdmin />}
+            {selectedTab === 'Mobile App' && <ProductAdmin />}
           </div>
-
         </div>
       </div>
     </section>

@@ -72,8 +72,8 @@ const Navbar = () => {
               <Image src="./images/icons/phone.svg" alt="log" width={14} height={14} />
             </button>
             <div>
-              <span className="text-[#A4A4A4] block font-medium font-urbanist">Toll Free No.</span>
-              <span className="text-white block font-semibold font-urbanist">+91 2093765495</span>
+              <span className="text-[#A4A4A4] block font-medium font-urbanist">Call Now</span>
+              <span className="text-white block font-semibold font-urbanist">+1 518 823 6750</span>
             </div>
           </div>
         </nav>

@@ -9,24 +9,22 @@ const Banner = () => {
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
           <div className="bg-gradient-border w-fit mx-auto rounded-full p-[1px] mb-3" data-aos="fade-up" data-aos-duration={500}>
-            <p className="text-white uppercase text-lg font-semibold font-urbanist bg-black rounded-full px-4 py-2">
-              Homelead crm software
-            </p>
+            <p className="text-white uppercase text-lg font-semibold font-urbanist bg-black rounded-full px-4 py-2">ONE STOP SOLUTION</p>
           </div>
           <h1
-            className="text-3xl md:text-4xl leading-10 lg:text-6xl text-white font-semibold font-urbanist tracking-wide"
+            className="text-3xl leading-normal lg:text-[40px] text-white font-semibold font-urbanist tracking-wide"
             data-aos="fade-up"
             data-aos-duration={1000}
           >
-            One Stop Solution for <span className="text-[#A4A4A4]">RealEstate</span> Owner{' '}
+            Empowering Your <span className="text-[#A4A4A4]">RealEstate Business</span> with Seamless CRM Solution
           </h1>
           <div
-            className="flex-center flex-col  font-rubik font-medium sm:flex-row gap-5 mt-7 md:mt-14"
+            className="flex-center flex-col z-10 relative font-rubik font-medium sm:flex-row gap-5 mt-7 md:mt-14"
             data-aos="fade-up"
             data-aos-duration={1500}
           >
             <Button variant="primary" icon={<IconArrowRight />}>
-              {`Start Now - It's Free`}
+              {`For IVR Solution`}
             </Button>
 
             <Button variant="outline" icon={<IconArrowRight />}>
