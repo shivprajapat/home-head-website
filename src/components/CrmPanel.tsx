@@ -15,7 +15,7 @@ function CrmPanel(props: any) {
                 } `}
               />
             </div>
-              <span>{t}</span>
+            <span>{t}</span>
           </button>
         ))}
       </div>

@@ -13,10 +13,10 @@ const ProductAdmin = () => {
   return (
     <CrmPanel tabs={tabs} click={selectedTab} selected={tab}>
       <Tabs isSelected={tab === 'Land Management'} className="relative">
-        <Image src="/images/land-management.png" alt="" width={700} height={550}/>
+        <Image src="/images/land-management.png" alt="" width={700} height={550} />
       </Tabs>
       <Tabs isSelected={tab === 'Project Management'} className="relative">
-        <Image src="/images/land-management.png" alt="" width={700} height={550}/>
+        <Image src="/images/land-management.png" alt="" width={700} height={550} />
       </Tabs>
     </CrmPanel>
   )

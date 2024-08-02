@@ -11,13 +11,26 @@ const Navbar = () => {
     <header>
       <div className="container">
         <nav className="w-full flex py-4 md:py-6 justify-between items-center">
-          <Image src="./logo.svg" alt="log" width={234} height={71} className="w-36 md:w-40 lg:w-52 xl:w-60" data-aos="fade-down" data-aos-duration={500} />
-          <ul className="list-none sm:flex hidden justify-end items-center bg-white py-4 px-10 lg:py-5 lg:px-12 rounded-full " data-aos="fade-down" data-aos-duration={1000}>
+          <Image
+            src="./logo.svg"
+            alt="log"
+            width={234}
+            height={71}
+            className="w-36 md:w-40 lg:w-52 xl:w-60"
+            data-aos="fade-down"
+            data-aos-duration={500}
+          />
+          <ul
+            className="list-none sm:flex hidden justify-end items-center bg-white py-4 px-10 lg:py-5 lg:px-12 rounded-full "
+            data-aos="fade-down"
+            data-aos-duration={1000}
+          >
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-medium  cursor-pointer font-rubik text-[16px] ${active === nav.title ? 'text-red-500' : 'text-black'} ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
-                  }`}
+                className={`font-medium  cursor-pointer font-rubik text-[16px] ${active === nav.title ? 'text-red-500' : 'text-black'} ${
+                  index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
+                }`}
                 onClick={() => setActive(nav.title)}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
@@ -35,15 +48,17 @@ const Navbar = () => {
               onClick={() => setToggle(!toggle)}
             />
             <div
-              className={`${!toggle ? 'hidden' : 'flex'
-                } p-6 bg-gradient-header absolute top-[70px] right-0 mx-4 min-w-[140px] rounded-xl animation-slide-top z-[1]`}
+              className={`${
+                !toggle ? 'hidden' : 'flex'
+              } p-6 bg-gradient-header absolute top-[70px] right-0 mx-4 min-w-[140px] rounded-xl animation-slide-top z-[1]`}
             >
               <ul className="list-none flex justify-end items-start flex-1 flex-col">
                 {navLinks.map((nav, index) => (
                   <li
                     key={nav.id}
-                    className={`font-poppins font-medium font-rubik cursor-pointer text-[16px] ${active === nav.title ? 'text-white' : 'text-slate-300'
-                      } ${index === navLinks.length - 1 ? 'mb-0' : 'mb-4'}`}
+                    className={`font-poppins font-medium font-rubik cursor-pointer text-[16px] ${
+                      active === nav.title ? 'text-white' : 'text-slate-300'
+                    } ${index === navLinks.length - 1 ? 'mb-0' : 'mb-4'}`}
                     onClick={() => setActive(nav.title)}
                   >
                     <a href={`#${nav.id}`}>{nav.title}</a>

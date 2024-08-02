@@ -8,7 +8,7 @@ const MoreFeatures = () => {
   return (
     <section>
       <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 py-10 mb-0 md:mb-5 sm:mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 py-10 mb-0 xl:mb-20">
           <h2 className="heading font-urbanist font-semibold" data-aos="fade-up" data-aos-duration={1000}>
             more <span className="highlight">features</span>
           </h2>

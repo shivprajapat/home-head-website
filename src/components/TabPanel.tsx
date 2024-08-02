@@ -6,8 +6,9 @@ function TabPanel(props: any) {
       <div className="sm:pr-0">
         {props.tabs.map((t: any, index: number) => (
           <button
-            className={`w-64 flex-between text-base font-medium px-5 py-4 border text-left rounded-md font-rubik ${props.selected === t ? 'border-white' : 'border-transparent'
-              }`}
+            className={`w-64 flex-between text-base font-medium px-5 py-4 border text-left rounded-md font-rubik ${
+              props.selected === t ? 'border-white' : 'border-transparent'
+            }`}
             key={index}
             onClick={() => props.click(t)}
           >

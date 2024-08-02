@@ -29,8 +29,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex items-center sm:justify-between justify-center text-center flex-wrap text-base text-[#929292] font-urbanist font-medium">
-          <p className='sm:text-center'>Powered by Telepathy | All Rights Reserved © 2024</p>
-          <p className='sm:text-center'>Privacy Policy | Terms </p>
+          <p className="sm:text-center">Powered by Telepathy | All Rights Reserved © 2024</p>
+          <p className="sm:text-center">Privacy Policy | Terms </p>
         </div>
       </div>
     </footer>

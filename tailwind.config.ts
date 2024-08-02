@@ -18,7 +18,7 @@ const config: Config = {
         'gradient-btn-green': 'linear-gradient(180deg, #16B98D 0%, #0B5D47 100%)',
         'gradient-green': 'linear-gradient(259deg, #16B98D 0%, #0B5D47 100%)',
         'gradient-border': 'linear-gradient(290deg, #ffffff 0%, #444444 100%)',
-        'gradient-header':'linear-gradient(144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%)'
+        'gradient-header': 'linear-gradient(144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%)'
       },
       fontFamily: {
         urbanist: ['var(--font-urbanist)'],

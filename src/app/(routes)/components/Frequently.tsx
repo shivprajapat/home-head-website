@@ -6,18 +6,18 @@ import { accordionData } from '@/constants'
 import React, { useState } from 'react'
 
 const Frequently = () => {
-  const tabs = ['General', 'CRM Related', 'Evaluation', 'More Security Resources'];
-  const [tab, setTab] = useState('General');
+  const tabs = ['General', 'CRM Related', 'Evaluation', 'More Security Resources']
+  const [tab, setTab] = useState('General')
 
   function selectedTab(tab: React.SetStateAction<string>) {
-    setTab(tab);
+    setTab(tab)
   }
 
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   const handleToggle = (index: number) => {
-    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
-  };
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index))
+  }
   return (
     <section className="py-10">
       <div className="container">
@@ -27,10 +27,9 @@ const Frequently = () => {
           </h2>
         </div>
         <div className="max-w-screen-lg" data-aos="fade-up" data-aos-duration={1000}>
-          
           <TabPanel tabs={tabs} click={selectedTab} selected={tab}>
             <Tabs isSelected={tab === 'General'}>
-              {accordionData.map((item, index) => ( 
+              {accordionData.map((item, index) => (
                 <Accordion
                   key={index}
                   title={item.title}
@@ -74,7 +73,6 @@ const Frequently = () => {
               ))}
             </Tabs>
           </TabPanel>
-
         </div>
       </div>
     </section>

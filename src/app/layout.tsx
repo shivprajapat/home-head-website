@@ -33,9 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} ${urbanist.variable} ${rubik.variable}`}>
-        {children}
-      </body>
+      <body className={`${poppins.className} ${urbanist.variable} ${rubik.variable}`}>{children}</body>
     </html>
   )
 }

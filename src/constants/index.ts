@@ -86,7 +86,7 @@ const feedbacksData = [
   {
     icon: '/images/icons/happy-clients.svg',
     title: 'Happy Clients',
-    number: '450 +',
+    number: '450 +'
   },
   {
     icon: '/images/icons/customer-support.svg',
