@@ -3,7 +3,7 @@ import IconArrowRight from '@/svg-icons/arrow-right'
 import Image from 'next/image'
 import React from 'react'
 
-const Banner = () => {
+const Banner = ({ modalHandler }: any) => {
   return (
     <section id="home" className="py-8 md:py-14 lg:py-16 relative">
       <div className="container">
@@ -23,11 +23,11 @@ const Banner = () => {
             data-aos="fade-up"
             data-aos-duration={1500}
           >
-            <Button variant="primary" icon={<IconArrowRight />}>
+            <Button variant="primary" icon={<IconArrowRight />} onClick={modalHandler}>
               {`For IVR Solution`}
             </Button>
 
-            <Button variant="outline" icon={<IconArrowRight />}>
+            <Button variant="outline" icon={<IconArrowRight />} onClick={modalHandler}>
               Request a Demo
             </Button>
           </div>

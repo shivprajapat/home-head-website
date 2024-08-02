@@ -3,7 +3,7 @@ import IconArrowRight from '@/svg-icons/arrow-right'
 import Image from 'next/image'
 import React from 'react'
 
-const Instant = () => {
+const Instant = ({ modalHandler }: any) => {
   return (
     <section className="py-10 lg:py-12">
       <div className="container">
@@ -17,7 +17,7 @@ const Instant = () => {
               to collaborate with.
             </p>
             <div className="mt-7 md:mt-12 lg:mt-16">
-              <Button variant="primary" icon={<IconArrowRight />} className="font-rubik font-medium">
+              <Button variant="primary" icon={<IconArrowRight />} className="font-rubik font-medium" onClick={modalHandler}>
                 Request a Demo
               </Button>
             </div>

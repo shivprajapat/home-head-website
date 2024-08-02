@@ -9,9 +9,9 @@ type ButtonType = {
   icon?: string
   className?: string
   children: ReactNode
+  onClick?: () => void
   fullWidth?: boolean
   type?: 'button' | 'submit' | undefined
-  onClick?: () => void
 }
 type HeadingType = {
   title: string
@@ -25,9 +25,13 @@ interface TiltProps {
   [x: string]: any
 }
 interface FeatureData {
-  id?: string // Adjust these based on the actual data structure
+  id?: string
   title: string
-  description: string
   imageUrl: string
-  // Add other properties as needed
+  description: string
+}
+
+interface UserModalProps {
+  open: boolean
+  onClose: () => void
 }

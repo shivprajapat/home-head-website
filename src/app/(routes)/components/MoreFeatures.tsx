@@ -4,7 +4,7 @@ import { feedbacksData, moreFeaturesData } from '@/constants'
 import IconArrowRight from '@/svg-icons/arrow-right'
 import Image from 'next/image'
 import React from 'react'
-const MoreFeatures = () => {
+const MoreFeatures = ({ modalHandler }: any) => {
   return (
     <section>
       <div className="container">
@@ -35,11 +35,11 @@ const MoreFeatures = () => {
               Eager to 4X your revenue? <br /> {`Let's connect!`}
             </h2>
             <div className="flex justify-start flex-col sm:flex-row gap-2 sm:gap-5 mt-7 md:mt-5 font-rubik font-medium flex-wrap">
-              <Button variant="primary" icon={<IconArrowRight />}>
+              <Button variant="primary" icon={<IconArrowRight />} onClick={modalHandler}>
                 {`Start Now - It's Free`}
               </Button>
 
-              <Button variant="black" icon={<IconArrowRight />}>
+              <Button variant="black" icon={<IconArrowRight />} onClick={modalHandler}>
                 Request a Demo
               </Button>
             </div>
