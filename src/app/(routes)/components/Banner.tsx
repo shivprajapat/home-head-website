@@ -5,7 +5,7 @@ import React from 'react'
 
 const Banner = () => {
   return (
-    <section id="home" className="py-8 md:py-14 2xl:py-16 relative">
+    <section id="home" className="py-8 md:py-14 lg:py-16 relative">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
           <div className="bg-gradient-border w-fit mx-auto rounded-full p-[1px] mb-3" data-aos="fade-up" data-aos-duration={500}>

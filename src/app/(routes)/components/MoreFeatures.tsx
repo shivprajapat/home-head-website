@@ -12,7 +12,7 @@ const MoreFeatures = () => {
           <h2 className="heading font-urbanist font-semibold" data-aos="fade-up" data-aos-duration={1000}>
             more <span className="highlight">features</span>
           </h2>
-          <div className="pb-0 md:pb-0 sm:pb-28">
+          <div className="pb-0 md:pb-0 sm:pb-28 max-w-lg w-full">
             {moreFeaturesData.map((item, index) => {
               const { icon, title, description } = item
               return (
@@ -29,7 +29,7 @@ const MoreFeatures = () => {
             })}
           </div>
         </div>
-        <div className="bg-gradient-green rounded-lg p-6 lg:p-12 mb-12 lg:mb-16 relative">
+        <div className="bg-gradient-green rounded-lg p-6 lg:p-12 mb-12 lg:mb-16 relative max-w-screen-lg mx-auto">
           <div className="max-w-md lg:max-w-full w-full" data-aos="fade-up" data-aos-duration={1000}>
             <h2 className="heading sm:leading-tight font-urbanist font-semibold">
               Eager to 4X your revenue? <br /> {`Let's connect!`}

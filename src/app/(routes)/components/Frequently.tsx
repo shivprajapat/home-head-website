@@ -19,7 +19,7 @@ const Frequently = () => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index))
   }
   return (
-    <section className="py-10">
+    <section className="py-10 lg:py-14">
       <div className="container">
         <div className="mb-8 md:mb-16">
           <h2 className="heading font-urbanist font-semibold text-2xl lg:text-4xl" data-aos="fade-up" data-aos-duration={1000}>
