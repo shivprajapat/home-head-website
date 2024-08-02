@@ -42,24 +42,16 @@ const Product = () => {
         </div>
 
         <div className="tab-content">
-          {selectedTab === 'Admin' && (
-            <div className="bg-white rounded-lg pl-5 lg:pl-10 pt-7 lg:pt-12">
-              <div className="mb-7 lg:mb-14">
-                <p className="font-urbanist font-medium text-lg mb-2 text-black">Real estate CRM Software</p>
-                <h2 className="heading font-urbanist !text-black">
-                  The app is great for <br /> <span className="highlight">Basic setup</span> and adjusts.
-                </h2>
-              </div>
-              <ProductAdmin />
+          <div className="bg-white rounded-lg pl-5 lg:pl-10 py-7 lg:py-12">
+            <div className="mb-7 lg:mb-14">
+              <p className="font-urbanist font-medium text-lg mb-2 text-black">Real estate CRM Software</p>
+              <h2 className="heading font-urbanist !text-black">
+                The app is great for <br /> <span className="highlight">Basic setup</span> and adjusts.
+              </h2>
             </div>
-          )}
-
-          {selectedTab === 'Mobile App' && (
-            <div className="bg-green-400">
-              <h3 className="text-2xl font-bold">Mobile App Tab Content</h3>
-              <p>Details about the Mobile App tab...</p>
-            </div>
-          )}
+            {selectedTab === 'Admin' && <ProductAdmin />}
+            {selectedTab === 'Mobile App' && <ProductAdmin />}
+          </div>
         </div>
       </div>
     </section>
