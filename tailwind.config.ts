@@ -6,7 +6,7 @@ const config: Config = {
     extend: {
       container: {
         center: true,
-        padding: '16px',
+        padding: '20px',
         screens: {
           xl: '1440px'
         }
@@ -21,7 +21,8 @@ const config: Config = {
         'gradient-header':'linear-gradient(144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%)'
       },
       fontFamily: {
-        urbanist: ['var(--font-urbanist)']
+        urbanist: ['var(--font-urbanist)'],
+        rubik: ['var(--font-rubik)']
       },
       keyframes: {
         up: {

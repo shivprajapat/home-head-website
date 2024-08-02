@@ -19,17 +19,18 @@ const Frequently = () => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
   return (
-    <section className="pt-0 py-6 lg:py-14">
+    <section className="py-10">
       <div className="container">
-        <div className="mb-4 md:mb-8">
-          <h2 className="heading" data-aos="fade-up" data-aos-duration={1000}>
+        <div className="mb-8 md:mb-16">
+          <h2 className="heading font-urbanist font-semibold text-2xl lg:text-4xl" data-aos="fade-up" data-aos-duration={1000}>
             Frequently Asked <span className="highlight">Questions</span>
           </h2>
         </div>
         <div className="max-w-screen-lg" data-aos="fade-up" data-aos-duration={1000}>
+          
           <TabPanel tabs={tabs} click={selectedTab} selected={tab}>
             <Tabs isSelected={tab === 'General'}>
-              {accordionData.map((item, index) => (
+              {accordionData.map((item, index) => ( 
                 <Accordion
                   key={index}
                   title={item.title}
@@ -73,6 +74,7 @@ const Frequently = () => {
               ))}
             </Tabs>
           </TabPanel>
+
         </div>
       </div>
     </section>

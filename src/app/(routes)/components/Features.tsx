@@ -28,9 +28,9 @@ const Features: React.FC = () => {
     arrows: false, // Disable default arrows
     autoplay: true,
     autoplaySpeed: 2000,
-  responsive: [
+    responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1199,
         settings: {
           slidesToShow: 4,
           infinite: true
@@ -74,11 +74,15 @@ const Features: React.FC = () => {
   return (
     <section>
       <div className="container">
-        <div className="pb-12 md:pb-20">
-          <h2 className="heading" data-aos="fade-up" data-aos-duration={1000}>
+        <div className="pb-9 md:pb-12">
+          <h2 className="heading font-urbanist font-semibold" data-aos="fade-up" data-aos-duration={1000}>
             All the <span className="highlight">features</span> done right.
           </h2>
-          <p className="max-w-md text-[#929292] text-base md:text-lg" data-aos="fade-up" data-aos-duration={1000}>
+          <p
+            className="max-w-md font-urbanist font-semibold text-[#929292] text-base md:text-lg"
+            data-aos="fade-up"
+            data-aos-duration={1000}
+          >
             Shape and Scale your business, with our unique and high-powered Real Estate CRM.
           </p>
         </div>
@@ -89,12 +93,12 @@ const Features: React.FC = () => {
             </div>
           ))}
         </Slider>
-        <div className="flex items-center gap-7 mt-10 lg:mt-20">
+        <div className="flex items-center gap-3 sm:gap-7 mt-10 lg:mt-20">
           <button onClick={handlePrevClick}>
-            <Image src="/images/icons/nav-left.svg" alt="Previous" width={50} height={50} />
+            <Image src="/images/icons/nav-left.svg" alt="Previous" width={50} height={50} className="size-9 sm:size-12" />
           </button>
           <button onClick={handleNextClick}>
-            <Image src="/images/icons/nav-right.svg" alt="Next" width={50} height={50} />
+            <Image src="/images/icons/nav-right.svg" alt="Next" width={50} height={50} className="size-9 sm:size-12" />
           </button>
         </div>
       </div>

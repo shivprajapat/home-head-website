@@ -6,36 +6,35 @@ import Image from 'next/image'
 import React from 'react'
 const MoreFeatures = () => {
   return (
-    <section className="py-10">
+    <section>
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pb-10">
-            <h2 className="heading" data-aos="fade-up" data-aos-duration={1000}>
-              more <span className="highlight">features</span>
-            </h2>
-          <div className='pb-28'>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 py-10 mb-0 md:mb-5 sm:mb-20">
+          <h2 className="heading font-urbanist font-semibold" data-aos="fade-up" data-aos-duration={1000}>
+            more <span className="highlight">features</span>
+          </h2>
+          <div className="pb-0 md:pb-0 sm:pb-28">
             {moreFeaturesData.map((item, index) => {
               const { icon, title, description } = item
               return (
-                <div key={index} className="flex items-center flex-col group md:flex-row gap-10 lg:gap-14 mb:5 last:mb-0 relative">
-                  <div className="absolute h-full w-full bg-slate-800 rounded-md -top-10 group-hover:top-0 opacity-0 group-hover:opacity-100 transition-all duration-300" />
-                  <div className="relative size-52 transform group-hover:-translate-y-4 duration-500 ease-in-out">
+                <div key={index} className="flex items-center flex-col md:flex-row gap-10 lg:gap-14 mb:5 last:mb-0 relative">
+                  <div className="relative size-52 transform duration-500 ease-in-out">
                     <Image src={icon} alt="icon" fill />
                   </div>
                   <div className="relative">
-                    <h4 className="text-2xl group-hover:text-white text-white mb-2 font-semibold">{title}</h4>
-                    <p className="text-base group-hover:text-white text-[#929292] font-medium">{description}</p>
+                    <h4 className="text-2xl text-white mb-2 font-semibold font-urbanist">{title}</h4>
+                    <p className="text-base text-[#929292] font-medium">{description}</p>
                   </div>
                 </div>
               )
             })}
           </div>
         </div>
-        <div className="bg-gradient-green rounded-lg p-12 mb-12 lg:mb-16 relative">
-          <div  data-aos="fade-up" data-aos-duration={1000}>
-            <h2 className="heading leading-tight">
+        <div className="bg-gradient-green rounded-lg p-6 lg:p-12 mb-12 lg:mb-16 relative">
+          <div className="max-w-md lg:max-w-full w-full" data-aos="fade-up" data-aos-duration={1000}>
+            <h2 className="heading sm:leading-tight font-urbanist font-semibold">
               Eager to 4X your revenue? <br /> {`Let's connect!`}
             </h2>
-            <div className="flex justify-start flex-col sm:flex-row gap-5 mt-7 md:mt-5">
+            <div className="flex justify-start flex-col sm:flex-row gap-2 sm:gap-5 mt-7 md:mt-5 font-rubik font-medium flex-wrap">
               <Button variant="primary" icon={<IconArrowRight />}>
                 {`Start Now - It's Free`}
               </Button>
@@ -45,16 +44,16 @@ const MoreFeatures = () => {
               </Button>
             </div>
           </div>
-            <Image
-              src="/images/revenue.png"
-              alt="log"
-              width={564}
-              height={450}
-              className="-bottom-4 absolute -right-3 z-10"
-            />
+          <Image
+            src="/images/revenue.png"
+            alt="log"
+            width={564}
+            height={450}
+            className="-bottom-4 md:absolute -right-3 z-10 mt-4 md:mt-0 sm:h-60 sm:w-72 lg:h-80 xl:h-96 lg:w-[450px] xl:w-[500px]"
+          />
         </div>
         <div className="max-w-screen-md mx-auto">
-          <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-10" data-aos="fade-up" data-aos-duration={1000}>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-10" data-aos="fade-up" data-aos-duration={1000}>
             {feedbacksData.map((item, index) => {
               const { icon, title, number } = item
               return (
@@ -63,8 +62,8 @@ const MoreFeatures = () => {
                     <Image src={icon} alt="icon" fill />
                   </div>
                   <div>
-                    <h4 className="text-2xl text-white font-semibold">{number}</h4>
-                    <p className="text-base text-[#929292] font-medium">{title}</p>
+                    <h4 className="text-2xl text-white font-semibold font-urbanist">{number}</h4>
+                    <p className="text-base text-[#929292] font-medium font-urbanist">{title}</p>
                   </div>
                 </div>
               )

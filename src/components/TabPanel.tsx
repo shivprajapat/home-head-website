@@ -3,12 +3,11 @@ import IconArrowRight from '@/svg-icons/arrow-right'
 function TabPanel(props: any) {
   return (
     <div className="flex items-start flex-col md:flex-row gap-6">
-      <div className="sm:pr-28">
-        {props.tabs.map((t:any, index:number) => (
+      <div className="sm:pr-0">
+        {props.tabs.map((t: any, index: number) => (
           <button
-            className={`w-64 flex-between text-base font-medium px-5 py-4 border text-left rounded-md ${
-              props.selected === t ? 'border-white' : 'border-transparent'
-            }`}
+            className={`w-64 flex-between text-base font-medium px-5 py-4 border text-left rounded-md font-rubik ${props.selected === t ? 'border-white' : 'border-transparent'
+              }`}
             key={index}
             onClick={() => props.click(t)}
           >
@@ -17,7 +16,7 @@ function TabPanel(props: any) {
           </button>
         ))}
       </div>
-      <div className="sm:pl-10">{props.children}</div>
+      <div className="sm:pl-0 font-urbanist font-medium">{props.children}</div>
     </div>
   )
 }

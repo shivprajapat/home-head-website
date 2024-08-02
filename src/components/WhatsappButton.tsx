@@ -16,7 +16,7 @@ const WhatsappButton = () => {
     })
   }, [])
   return (
-    <div className={`fixed right-4 transition-all z-10 duration-500 ${show ? 'bottom-20' : 'bottom-4'}`}>
+    <div className={`fixed right-4 transition-all z-10 duration-500 ${show ? 'bottom-16' : 'bottom-4'}`}>
       <div>
         <span className="animate-ping absolute inline-flex size-10 rounded-full bg-white opacity-75" />
         <button className="size-10 relative bg-white rounded-full flex-center" type="button">
