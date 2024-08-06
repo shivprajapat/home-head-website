@@ -13,22 +13,22 @@ const ProductAdmin = () => {
   return (
     <CrmPanel tabs={tabs} click={selectedTab} selected={tab}>
       <Tabs isSelected={tab === 'Land Management'} className="relative">
-        <Image src="/images/land-management.png" alt="" width={700} height={550} />
+        <Image src="/images/land-management.svg" alt="" width={700} height={550} className='w-full' loading='lazy' />
       </Tabs>
       <Tabs isSelected={tab === 'Project Management'} className="relative">
-        <Image src="/images/land-management.png" alt="" width={700} height={550} />
+        <Image src="/images/land-management.svg" alt="" width={700} height={550} className='w-full' loading='lazy' />
       </Tabs>
       <Tabs isSelected={tab === 'Property Management'} className="relative">
-        <Image src="/images/land-management.png" alt="" width={700} height={550} />
+        <Image src="/images/land-management.svg" alt="" width={700} height={550} className='w-full' loading='lazy' />
       </Tabs>
       <Tabs isSelected={tab === 'Lead Management'} className="relative">
-        <Image src="/images/land-management.png" alt="" width={700} height={550} />
+        <Image src="/images/land-management.svg" alt="" width={700} height={550} className='w-full' loading='lazy' />
       </Tabs>
       <Tabs isSelected={tab === 'Sales Reports'} className="relative">
-        <Image src="/images/land-management.png" alt="" width={700} height={550} />
+        <Image src="/images/land-management.svg" alt="" width={700} height={550} className='w-full' loading='lazy' />
       </Tabs>
       <Tabs isSelected={tab === 'Team Management'} className="relative">
-        <Image src="/images/land-management.png" alt="" width={700} height={550} />
+        <Image src="/images/land-management.svg" alt="" width={700} height={550} className='w-full' loading='lazy' />
       </Tabs>
     </CrmPanel>
   )

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import Image from 'next/image'
 import { navLinks } from '@/constants'
@@ -6,9 +6,29 @@ import { navLinks } from '@/constants'
 const Navbar = () => {
   const [active, setActive] = useState('Home')
   const [toggle, setToggle] = useState(false)
+  const [show, handleShow] = useState(false);
+
+  useEffect(() => {
+    // Define the function to handle scroll events
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        handleShow(true);
+      } else {
+        handleShow(false);
+      }
+    };
+
+    // Add the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); // Empty dependency array to only run once on mount and unmount
 
   return (
-    <header>
+    <header className={`fixed w-full z-20 ${show && 'bg-primary'}`}>
       <div className="container">
         <nav className="w-full flex py-4 md:py-6 justify-between items-center">
           <Image

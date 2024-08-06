@@ -2,7 +2,7 @@ import React from 'react'
 import Button from './button'
 import Image from 'next/image'
 
-const UserModal: React.FC<UserModalProps> = ({ open, onClose }) => {
+const RequestModal: React.FC<RequestModalProps> = ({ open, onClose }) => {
   return (
     <div
       onClick={onClose}
@@ -22,7 +22,7 @@ const UserModal: React.FC<UserModalProps> = ({ open, onClose }) => {
           <Image src="./images/icons/close.svg" alt="menu" className=" object-contain" width={19} height={19} />
         </button>
         <h2 className="pt-5 border-b border-white/20 text-left pb-3 px-5 text-white font-urbanist text-xl font-semibold">
-          User Information
+          Request For Demo
         </h2>
         <form className="p-4 md:p-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -68,4 +68,4 @@ const UserModal: React.FC<UserModalProps> = ({ open, onClose }) => {
   )
 }
 
-export default UserModal
+export default RequestModal

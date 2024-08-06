@@ -22,7 +22,7 @@ const Features: React.FC = () => {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow:4,
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: false, // Disable default arrows
@@ -73,9 +73,9 @@ const Features: React.FC = () => {
   }
 
   return (
-    <section>
+    <section className="py-8 md:py-14 lg:py-28">
       <div className="container">
-        <div className="pb-9 md:pb-12">
+        <div className="pb-9 md:pb-16">
           <h2 className="heading font-urbanist font-semibold" data-aos="fade-up" data-aos-duration={1000}>
             All the <span className="highlight">features</span> done right.
           </h2>

@@ -1,11 +1,11 @@
 import Button from '@/components/button'
 import IconArrowRight from '@/svg-icons/arrow-right'
 import Image from 'next/image'
-import React from 'react'
+import React, { FC } from 'react'
 
-const Instant = ({ modalHandler }: any) => {
+const Instant: FC<ModalProps> = ({ modalHandler }) => {
   return (
-    <section className="py-10 lg:py-12">
+    <section className="py-10 lg:py-16">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-48 xl:gap-80">
           <div>

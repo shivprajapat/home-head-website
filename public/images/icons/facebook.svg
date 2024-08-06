@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
-  <g id="Group_7688" data-name="Group 7688" transform="translate(-142 -6319)">
-    <rect id="Rectangle_135" data-name="Rectangle 135" width="40" height="40" rx="5" transform="translate(142 6319)" fill="#1877f2"/>
-    <g id="Page-1" transform="translate(158.636 6332.272)">
-      <g id="Dribbble-Light-Preview">
-        <g id="icons">
-          <path id="facebook-_176_" data-name="facebook-[#176]" d="M333.589,7252.456V7246.4h1.839l.3-2.691h-2.139V7242.4c0-.693.018-1.379.986-1.379h.981v-1.924a11.081,11.081,0,0,0-1.695-.094c-1.78,0-2.895,1.117-2.895,3.162v1.547H329v2.691h1.966v6.055Z" transform="translate(-329 -7239)" fill="#fff" fill-rule="evenodd"/>
-        </g>
-      </g>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" fill='white'><path d="M32,11h5c0.552,0,1-0.448,1-1V3.263c0-0.524-0.403-0.96-0.925-0.997C35.484,2.153,32.376,2,30.141,2C24,2,20,5.68,20,12.368 V19h-7c-0.552,0-1,0.448-1,1v7c0,0.552,0.448,1,1,1h7v19c0,0.552,0.448,1,1,1h7c0.552,0,1-0.448,1-1V28h7.222 c0.51,0,0.938-0.383,0.994-0.89l0.778-7C38.06,19.518,37.596,19,37,19h-8v-5C29,12.343,30.343,11,32,11z"/></svg>

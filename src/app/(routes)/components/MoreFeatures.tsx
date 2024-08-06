@@ -3,24 +3,27 @@ import Button from '@/components/button'
 import { feedbacksData, moreFeaturesData } from '@/constants'
 import IconArrowRight from '@/svg-icons/arrow-right'
 import Image from 'next/image'
-import React from 'react'
-const MoreFeatures = ({ modalHandler }: any) => {
+import React, { FC } from 'react'
+const MoreFeatures: FC<ModalProps> = ({ modalHandler }) => {
   return (
     <section>
       <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 py-10 mb-0 xl:mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 py-7 md:py-16 lg:py-10">
           <h2 className="heading font-urbanist font-semibold" data-aos="fade-up" data-aos-duration={1000}>
             more <span className="highlight">features</span>
           </h2>
-          <div className="pb-0 md:pb-0 sm:pb-28 max-w-lg w-full">
+          <div className="pb-0 md:pb-0 sm:pb-28 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-3 lg:grid-cols-1 lg:max-w-lg w-full">
             {moreFeaturesData.map((item, index) => {
               const { icon, title, description } = item
               return (
-                <div key={index} className="flex items-center flex-col md:flex-row gap-10 lg:gap-14 mb:5 last:mb-0 relative">
-                  <div className="relative size-52 transform duration-500 ease-in-out">
+                <div
+                  key={index}
+                  className="w-full flex items-center flex-col lg:flex-row gap-10 lg:gap-14 lg:mb-5 last:mb-0 relative border-2 before:w-0 before:h-full before:absolute before:bg-[#161616] hover:before:w-full border-[#161616] before:transition-all before:duration-500"
+                >
+                  <div className="relative size-52 ml-4">
                     <Image src={icon} alt="icon" fill />
                   </div>
-                  <div className="relative">
+                  <div className="relative p-5 lg:p-0">
                     <h4 className="text-2xl text-white mb-2 font-semibold font-urbanist">{title}</h4>
                     <p className="text-base text-[#929292] font-medium">{description}</p>
                   </div>
@@ -29,10 +32,12 @@ const MoreFeatures = ({ modalHandler }: any) => {
             })}
           </div>
         </div>
-        <div className="bg-gradient-green rounded-lg p-6 lg:p-12 mb-12 lg:mb-16 relative max-w-screen-lg mx-auto">
+        <div className="bg-gradient-green rounded-lg p-6 md:p-9 lg:p-12 mt-0 lg:mt-32 mb-20 lg:mb-28 max-w-screen-lg mx-auto relative">
+          <Image src="/images/layer-bg.png" className="object-cover" alt="layer" fill />
+
           <div className="max-w-md lg:max-w-full w-full" data-aos="fade-up" data-aos-duration={1000}>
             <h2 className="heading sm:leading-tight font-urbanist font-semibold">
-              Eager to 4X your revenue? <br /> {`Let's connect!`}
+              Eager to 4X your revenue? <br className="hidden sm:block" /> {`Let's connect!`}
             </h2>
             <div className="flex justify-start flex-col sm:flex-row gap-2 sm:gap-5 mt-7 md:mt-5 font-rubik font-medium flex-wrap">
               <Button variant="primary" icon={<IconArrowRight />} onClick={modalHandler}>
@@ -47,9 +52,9 @@ const MoreFeatures = ({ modalHandler }: any) => {
           <Image
             src="/images/revenue.png"
             alt="log"
-            width={564}
-            height={450}
-            className="-bottom-4 md:absolute -right-3 z-10 mt-4 md:mt-0 sm:h-60 sm:w-72 lg:h-80 xl:h-96 lg:w-[450px] xl:w-[500px]"
+            width={303}
+            height={350}
+            className="md:absolute md:-top-[40px] lg:-top-[60px] md:right-3 lg:right-7 z-10 mt-10 md:mt-0 md:h-[300px] w-fit lg:h-[377px]"
           />
         </div>
         <div className="max-w-screen-md mx-auto">

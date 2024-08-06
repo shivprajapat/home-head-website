@@ -31,7 +31,11 @@ interface FeatureData {
   description: string
 }
 
-interface UserModalProps {
+interface RequestModalProps {
   open: boolean
   onClose: () => void
+}
+
+interface ModalProps {
+  modalHandler: () => void
 }

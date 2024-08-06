@@ -1,6 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-const IconArrowRight = ({ className }: any) => {
+interface IconArrowRightProps {
+  className?: string; // className is optional
+}
+
+const IconArrowRight: React.FC<IconArrowRightProps> = ({ className }) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="8.086" height="7.147" viewBox="0 0 8.086 7.147" className={className}>
       <path

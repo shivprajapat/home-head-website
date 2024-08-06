@@ -132,4 +132,28 @@ const accordionData = [
       'Customer relationship management (CRM) software helps businesses manage customer data and interactions. It can connect different departments, such as sales, marketing, and customer service, to improve customer satisfaction and interactions. CRM software can also help businesses:'
   }
 ]
-export { navLinks, featuresData, moreFeaturesData, feedbacksData, accordionData }
+
+const socialLinks = [
+  {
+    href: 'https://www.facebook.com/TelepathySolutions',
+    icon: '/images/icons/facebook.svg',
+    bgColor: '#1877F2' // Facebook blue (hex code)
+  },
+  {
+    href: 'https://www.linkedin.com/company/telepathyinfotech/',
+    icon: '/images/icons/linkedin.svg',
+    bgColor: '#0A66C2' // LinkedIn blue (hex code)
+  },
+  {
+    href: 'https://www.youtube.com/@Telepathyinfo',
+    icon: '/images/icons/youtube.svg',
+    bgColor: '#FF0000' // YouTube red (hex code)
+  },
+  {
+    href: 'https://x.com/Telepathysocial',
+    icon: '/images/icons/twitter.svg',
+    bgColor: '#1DA1F2' // Twitter blue (hex code)
+  }
+]
+
+export { navLinks, featuresData, moreFeaturesData, feedbacksData, accordionData, socialLinks }
